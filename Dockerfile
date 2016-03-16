@@ -1,5 +1,5 @@
 # preparations:
-# bzr branch https://dudle.inf.tu-dresden.de/ cgi-bin
+# bzr branch https://dudle.inf.tu-dresden.de/ cgi
 #
 # build:
 # docker build -t my-dudle .

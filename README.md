@@ -10,6 +10,7 @@ Installation
 
 Fetch Dudle sources, create the Docker image and a folder for backups:
 
+    # cd dudle-docker
     # bzr branch https://dudle.inf.tu-dresden.de/ cgi
     # docker build -t my-dudle .
     # mkdir -p /srv/dudle/backup
