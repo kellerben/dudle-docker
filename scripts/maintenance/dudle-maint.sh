@@ -16,7 +16,7 @@ run() {
 backup() {
     echo Running backup for container $CONTAINER_ID
 
-    docker exec -it $CONTAINER_ID /usr/local/bin/backup.sh || exit 1
+    docker exec $CONTAINER_ID /usr/local/bin/backup.sh || exit 1
 }
 
 connect() {
@@ -63,11 +63,11 @@ case "$1" in
         connect
         ;;
     start)
-	get_existing
+        get_existing
         docker start $CONTAINER_ID
         ;;
     stop)
-	get_existing
+        get_existing
         docker stop $CONTAINER_ID
         ;;
     restart)
