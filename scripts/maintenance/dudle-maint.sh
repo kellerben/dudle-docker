@@ -35,7 +35,7 @@ upgrade() {
     FROM_IMAGE=`cat Dockerfile | sed 's/^[ \t]*//g' | grep "FROM " | cut -d" " -f2`
     docker pull $FROM_IMAGE || exit 1
 
-    ( cd cgi; bzr merge ) || exit 1
+    ( cd cgi; git pull ) || exit 1
 
     echo Creating new image...
     docker build -t my-dudle . || exit 1

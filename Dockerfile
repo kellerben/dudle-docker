@@ -1,5 +1,5 @@
 # preparations:
-# bzr branch https://dudle.inf.tu-dresden.de/ cgi
+# git clone https://github.com/kellerben/dudle.git cgi
 #
 # build:
 # docker build -t my-dudle .
