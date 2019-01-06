@@ -1,3 +1,3 @@
 BACKUP_FILE=/backup/dudle-backup.tar.gz
-DUDLE_DIR=/var/www/html/cgi-bin
+DUDLE_DIR=/var/www/dudle
 
