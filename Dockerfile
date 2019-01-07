@@ -9,8 +9,8 @@
 
 FROM centos:7
 
-RUN yum -y install httpd ruby ruby-devel git rubygems gcc make epel-release wget
-RUN gem install gettext iconv
+RUN yum -y install httpd ruby ruby-devel git rubygems gcc make epel-release wget libxml2-devel
+RUN gem install gettext iconv ratom
 RUN yum clean all
 
 CMD [ "/usr/local/bin/start.sh" ]
