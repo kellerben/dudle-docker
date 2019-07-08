@@ -6,6 +6,8 @@
 #
 # run:
 # docker run -it -p 8888:80 -v /srv/dudle-backup:/backup:Z  --rm --name my-running-dudle my-dudle
+# for development use: (uses current path)
+# docker run -it -p 8888:80 -v "$PWD":/var/www/dudle --rm --name my-running-dudle my-dudle
 
 FROM centos:7
 
